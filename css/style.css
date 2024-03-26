@@ -54,6 +54,12 @@
     position: relative;
 }
 
+.thumbs_arrow {
+    float: left;
+    height: 300px;
+    position: relative;
+}
+
 .thumb {
     height: calc((300px) / 5);
     opacity: 0.5;

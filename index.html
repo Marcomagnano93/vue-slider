@@ -28,22 +28,17 @@
                     </div>
                 </div>
 
-                <div class="thumbs">
+                <div class="thumbs_arrow">
                     <div class="prev" @click="currentSlideIndex > 0 ? currentSlideIndex-- : currentSlideIndex = 4"></div>
                     <div class="next" @click="currentSlideIndex < 4 ? currentSlideIndex++ : currentSlideIndex = 0"></div>
                 </div>
                 
-                
-
                 <div class="thumbs" >
-                    
                     <div class="thumb" v-for="(currentSlide,i) in slides">
                         <img @click="currentSlideIndex = i" :src="currentSlide.image" alt="Svezia" />
                     </div>
                 </div>
-
             </div>
-    
     </div>
 
     <script src="./js/app.js"></script>
