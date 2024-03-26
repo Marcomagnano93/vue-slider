@@ -28,8 +28,17 @@ createApp({
             }
         ]
     }
+  },
+  methods:  function(){
+    currentSlideIndex++
+    if(currentSlideIndex >= this.slides.lenght){
+      this.currentSlideIndex = 0
+    }else{
+      this.reset()
+    }
   }
-}).mount('#app')
+}
+).mount('#app')
 
 
   

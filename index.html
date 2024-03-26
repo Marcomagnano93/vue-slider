@@ -16,7 +16,8 @@
 
                 <div class="item"
                 :class="currentSlideIndex !== i ? 'd-none' : 'd-block'"
-                v-for="(currentSlide,i) in slides">
+                v-for="(currentSlide,i) in slides"
+                >
                     <img
                      :src="slides[currentSlideIndex].image"
                     />
